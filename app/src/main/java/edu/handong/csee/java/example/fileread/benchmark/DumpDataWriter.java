@@ -11,7 +11,7 @@ public class DumpDataWriter {
     static long size1MB = 1024 * 1024;
     static long size10MB = 1024 * 1024 * 10;
     static long size100MB = 1024 * 1024 * 100;
-    static long size1000MB = 1024 * 1024 * 1000;
+    static long size1000M = 1024 * 1024 * 1000;
     static byte oneByte = 1;
     static String input1MB="input1MB.txt";
     static String input10MB="input10MB.txt";
@@ -22,7 +22,7 @@ public class DumpDataWriter {
         writeDumpData(input1MB, size1MB);
         writeDumpData(input10MB, size10MB);
         writeDumpData(input100MB, size100MB);
-        writeDumpData(input1000MB, size1000MB);
+        writeDumpData(input1000MB, size1000M);
     }
 
     static void writeDumpData(String filename, long size) throws IOException {
